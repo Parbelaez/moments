@@ -1,7 +1,9 @@
 import styles from './App.module.css';
 import NavBar from './components/NavBar';
 import Container from 'react-bootstrap/Container';
-import {Routes,Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import './api/axiosDefaults';
+import SignUpForm from './pages/auth/SignUpForm';
 
 function App() {
   return (
@@ -38,7 +40,7 @@ function SignIn() {
 function SignUp() {
   return (
     <div>
-      <h1>Sign Up</h1>
+      <SignUpForm />
     </div>
   );
 }
